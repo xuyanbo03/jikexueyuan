@@ -1,0 +1,34 @@
+.header {
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+
+.sub-title {
+    width: 800px;
+}
+
+.homework {
+    position: relative;
+    margin: 10px auto;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.inner {
+    position: relative;
+    top: 50px;
+    left: 300px;
+    width: 200px;
+}
+
+.form-input {
+    display: inline-block;
+    width: 200px !important;
+}
+
+.form-button {
+    margin-top: 5px;
+    width: 200px !important;
+}

@@ -1,0 +1,85 @@
+.outer-box {
+    height: 330px;
+}
+
+.title-of-ways {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font: arial;
+}
+
+.subtitle-of-ways {
+    text-align: center;
+    font-size: 15px;
+    color: #696969;
+}
+
+.top-box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(204, 204, 204);
+    background-size: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    background-image: url(top.png);
+}
+
+.left-box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(204, 204, 204);
+    background-size: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    background-image: url(left.png);
+}
+
+.center-box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(96, 180, 255);
+    background-image: url(robot.png);
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+.right-box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(204, 204, 204);
+    background-size: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    background-image: url(right.png);
+}
+
+.bottom-box {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(204, 204, 204);
+    background-size: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    background-image: url(bottom.png);
+}
+
+.position-box {
+    height: 315px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexible-box {
+    height: 315px;
+    width: 500px;
+}

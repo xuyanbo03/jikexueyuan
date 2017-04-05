@@ -1,0 +1,76 @@
+nav {
+    margin: 20px 0 150px 0;
+    font-size: 13px;
+    width: 100%;
+    text-align: right;
+}
+
+body {
+    min-height: 900px;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+.header_black {
+    margin-left: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.header_normal {
+    color: black;
+    margin-left: 8px;
+}
+
+.header_moreproduct {
+    background: #3385FF;
+    padding: 5px;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#BaiduLogo_Input {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+#submit_result {
+    font-size: 15px;
+    background: #3385FF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 0px;
+    padding: 9px 20px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+#input_result {
+    width: 530px;
+    height: 33px;
+    border: 0px;
+}
+
+#footer01 {
+    font: 12px arial;
+    font-size: 10px;
+}
+
+#footer02 {
+    font: 12px arial;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #666;
+}
+
+a:hover {
+    color: blue;
+}

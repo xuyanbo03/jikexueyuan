@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>超级计算器</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="js/index.js"></script>
+    <div>
+        <!--Header-->
+        <div class="header">
+            <div class="title text-center">
+                <h1><strong>超级计算器</strong></h1>
+            </div>
+            <div class="sub-title text-center center-block">
+                <small><strong>目标：</strong></small>
+                <small>开发带页面可操作的完整计算器(可计算sin cos等)，根据用户的按钮给出结果，至少要适配到IE+chrome。
+                    <p>注：此计算器还可进行.3(=0.3）、-3+3(=0)、.3*.4(=0.12)等操作，计算实时显示和错误提示~</p>
+                </small>
+            </div>
+        </div>
+
+        <!--Homework-->
+        <div class="homework">
+            <div class="inner">
+                <div class="brand-name">
+                    <strong>超级计算器</strong>
+                </div>
+                <div class="views">
+                    <!--readonly 属性规定输入字段为只读,可以防止用户对值进行修改，直到满足某些条件为止（比如选中了一个复选框）。然后，需要使用 JavaScript 消除 readonly 值，将输入字段切换到可编辑状态-->
+                    <input type="text" id="view" class="form-control form-input" placeholder="0" required autofocus readonly="readonly">
+
+                    <div class="numbers">
+                        <button id="reset" class="btn label-danger form-button" style="top:0px; left:350px;"><strong class="num-size">C</strong>
+                        </button>
+                        <button id="signParL" class="btn label-info form-button" style="top:0px; left:0px;"><strong class="num-size">(</strong>
+                        </button>
+                        <button id="signParR" class="btn label-info form-button" style="top:0px; left:70px;"><strong class="num-size">)</strong>
+                        </button>
+                        <button id="signPai" class="btn label-info form-button" style="top:0px; left:140px;"><strong class="num-size">π</strong>
+                        </button>
+                        <button id="signE" class="btn label-info form-button" style="top:0px; left:210px;"><strong class="num-size">e</strong>
+                        </button>
+                        <button id="signDiv" class="btn label-info form-button" style="top:280px; left:210px;"><strong class="num-size">/</strong>
+                        </button>
+                        <button id="signMult" class="btn label-info form-button" style="top:210px; left:210px;"><strong class="num-size">*</strong>
+                        </button>
+                        <button id="signDel" class="btn label-danger form-button" style="top:0px; left:420px;"><strong class="num-size">Del</strong>
+                        </button>
+                        <button id="num7" class="btn btn-primary form-button" style="top:70px; left:0px;"><strong class="num-size">7</strong>
+                        </button>
+                        <button id="num8" class="btn btn-primary form-button" style="top:70px; left:70px;"><strong class="num-size">8</strong>
+                        </button>
+                        <button id="num9" class="btn btn-primary form-button" style="top:70px; left:140px;"><strong class="num-size">9</strong>
+                        </button>
+                        <button id="signMinus" class="btn label-info form-button" style="top:140px; left:210px;"><strong class="num-size">-</strong>
+                        </button>
+                        <button id="num4" class="btn btn-primary form-button" style="top:140px; left:0px;"><strong class="num-size">4</strong>
+                        </button>
+                        <button id="num5" class="btn btn-primary form-button" style="top:140px; left:70px;"><strong class="num-size">5</strong>
+                        </button>
+                        <button id="num6" class="btn btn-primary form-button" style="top:140px; left:140px;"><strong class="num-size">6</strong>
+                        </button>
+                        <button id="signPlus" class="btn label-info form-button" style="top:70px; left:210px;"><strong class="num-size">+</strong>
+                        </button>
+                        <button id="num1" class="btn btn-primary form-button" style="top:210px; left:0px;"><strong class="num-size">1</strong>
+                        </button>
+                        <button id="num2" class="btn btn-primary form-button" style="top:210px; left:70px;"><strong class="num-size">2</strong>
+                        </button>
+                        <button id="num3" class="btn btn-primary form-button" style="top:210px; left:140px;"><strong class="num-size">3</strong>
+                        </button>
+                        <button id="result" class="btn label-success form-button" style="top:210px; left:420px; height:130px !important;"><strong class="num-size">=</strong>
+                        </button>
+                        <button id="num0" class="btn btn-primary form-button" style="top:280px; left:0px;"><strong class="num-size">0</strong>
+                        </button>
+                        <button id="signDot" class="btn btn-primary form-button" style="top:280px; left:70px; width:130px !important;"><strong class="num-size">.</strong>
+                        </button>
+                        <button id="signTan" class="btn btn-warning form-button" style="top:280px; left:280px;"><strong class="num-size">tan</strong>
+                        </button>
+                        <button id="signCot" class="btn btn-warning form-button" style="top:280px; left:350px;"><strong class="num-size">cot</strong>
+                        </button>
+                        <button id="signCos" class="btn btn-warning form-button" style="top:210px; left:350px;"><strong class="num-size">cos</strong>
+                        </button>
+                        <button id="signSin" class="btn btn-warning form-button" style="top:210px; left:280px;"><strong class="num-size">sin</strong>
+                        </button>
+                        <button id="signLn" class="btn btn-warning form-button" style="top:140px; left:280px;"><strong class="num-size">ln</strong>
+                        </button>
+                        <button id="signLog" class="btn btn-warning form-button" style="top:140px; left:350px;"><strong class="num-size">log</strong>
+                        </button>
+                        <button id="signInverse" class="btn btn-warning form-button" style="top:0px; left:280px;"><strong class="num-size">1/x</strong>
+                        </button>
+                        <button id="signSquare" class="btn btn-warning form-button" style="top:70px; left:280px;"><strong class="num-size">x<sup>2</sup></strong>
+                        </button>
+                        <button id="signCube" class="btn btn-warning form-button" style="top:70px; left:350px;"><strong class="num-size">x<sup>3</sup></strong>
+                        </button>
+                        <button id="signExpY" class="btn btn-warning form-button" style="top:70px; left:420px;"><strong class="num-size">x<sup>y</sup></strong>
+                        </button>
+                        <button id="signEExpY" class="btn btn-warning form-button" style="top:140px; left:420px;"><strong class="num-size">e<sup>x</sup></strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
