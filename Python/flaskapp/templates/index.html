@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <from action="/login" methon="post">
+        <input type="text" name="username">
+        <input type="text" name="password">
+        <button type="submit" value="Submit">Submit</button>
+    </from>
+    <h2>{{ get_flashed_messages()[0] }}</h2>
+</body>
+</html>
